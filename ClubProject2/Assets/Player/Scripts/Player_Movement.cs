@@ -11,6 +11,7 @@ public class Player_Movement : MonoBehaviour
     private Vector2 moveVelocity;
     private Animator anim;
     private SpriteRenderer sr;
+    private bool dashWait = false;
 
 
     // Use this for initialization
@@ -32,6 +33,7 @@ public class Player_Movement : MonoBehaviour
         //Decides the direction of the desired velocity
         Vector2 moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * speed;
+        
 
         //Allows the animator ro know if the sprite is moving
         if (moveVelocity.magnitude > 0.01f)
@@ -51,7 +53,6 @@ public class Player_Movement : MonoBehaviour
     void FixedUpdate()
     {
         //Should flip the sprite to face the direction its moving
-        //NOT Currently working
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             if (Input.GetAxisRaw("Horizontal") >= 0.01f)
@@ -63,6 +64,27 @@ public class Player_Movement : MonoBehaviour
                 sr.flipX = true;
             }
         }
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+        if (Input.GetKey(KeyCode.LeftShift) && !dashWait)
+        {
+            rb.MovePosition(rb.position + (moveVelocity * Time.fixedDeltaTime * 10));
+            anim.SetBool("Dash", true);
+            StartCoroutine(dashWaitChange());
+            
+        }
+        else
+        {
+            rb.MovePosition(rb.position + (moveVelocity * Time.fixedDeltaTime));
+        }
+
+        IEnumerator dashWaitChange()
+        {
+            yield return new WaitForSeconds(3f);
+            anim.SetBool("Dash", false);
+            dashWait = true;
+            yield return new WaitForSeconds(2);
+            dashWait = false;
+
+
+        }
     }
 }
