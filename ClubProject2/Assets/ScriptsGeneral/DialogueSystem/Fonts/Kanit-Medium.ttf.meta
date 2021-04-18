@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 52039e6bd39266549a848ac0a09e3b19
+guid: 91435a468fbe41245b7a8388434a825a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,12 +8,12 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Poor Story
+  fontName: Kanit
   fontNames:
-  - Poor Story
+  - Kanit
   fallbackFontReferences: []
   customCharacters: 
-  fontRenderingMode: 0
+  fontRenderingMode: 2
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1

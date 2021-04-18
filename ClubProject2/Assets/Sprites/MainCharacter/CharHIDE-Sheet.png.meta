@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 4d6dc9d520df41d4999ec4b43c907a02
+guid: ad0667093e63abb499943d58699489b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3954778985762221655
-    second: Main_Run_0
+      213: -6203620235963616292
+    second: CharHIDE-Sheet_0
   - first:
-      213: -5268777252840446859
-    second: Main_Run_1
+      213: -7011165228977614878
+    second: CharHIDE-Sheet_1
   - first:
-      213: 5976884151193792534
-    second: Main_Run_2
+      213: 8189011346490843550
+    second: CharHIDE-Sheet_2
   - first:
-      213: -6384496648893346783
-    second: Main_Run_3
+      213: 2363879660568364610
+    second: CharHIDE-Sheet_3
   - first:
-      213: -7739134428265145733
-    second: Main_Run_4
+      213: -1672696049696690820
+    second: CharHIDE-Sheet_4
   - first:
-      213: 8763319513559907702
-    second: Main_Run_5
+      213: 1416681449410520227
+    second: CharHIDE-Sheet_5
   - first:
-      213: -1069949925750740943
-    second: Main_Run_6
-  - first:
-      213: -5016902046042937330
-    second: Main_Run_7
+      213: 1542745900121406824
+    second: CharHIDE-Sheet_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -88,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +97,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,13 +108,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Main_Run_0
+      name: CharHIDE-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3b6f9734058e9a0800000000000000
+      internalID: -6203620235963616292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHIDE-Sheet_1
       rect:
         serializedVersion: 2
         x: 40
-        y: 200
-        width: 125
-        height: 175
+        y: 0
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +143,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75e6983c88232e630800000000000000
-      internalID: 3954778985762221655
+      spriteID: 2ef0839fe5653be90800000000000000
+      internalID: -7011165228977614878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Main_Run_1
+      name: CharHIDE-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91ea31be6635a170800000000000000
+      internalID: 8189011346490843550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHIDE-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246c2f3e6003ec020800000000000000
+      internalID: 2363879660568364610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHIDE-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d21ac1ec369c8e0800000000000000
+      internalID: -1672696049696690820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHIDE-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4eff7b54019a310800000000000000
+      internalID: 1416681449410520227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharHIDE-Sheet_6
       rect:
         serializedVersion: 2
         x: 240
-        y: 200
-        width: 120
-        height: 180
+        y: 0
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,134 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57469c3f00b81e6b0800000000000000
-      internalID: -5268777252840446859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Run_2
-      rect:
-        serializedVersion: 2
-        x: 430
-        y: 205
-        width: 145
-        height: 190
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6107197f77822f250800000000000000
-      internalID: 5976884151193792534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Run_3
-      rect:
-        serializedVersion: 2
-        x: 635
-        y: 200
-        width: 135
-        height: 185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12c4a05df16b567a0800000000000000
-      internalID: -6384496648893346783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Run_4
-      rect:
-        serializedVersion: 2
-        x: 835
-        y: 200
-        width: 130
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7a924ebd32199490800000000000000
-      internalID: -7739134428265145733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Run_5
-      rect:
-        serializedVersion: 2
-        x: 45
-        y: 5
-        width: 130
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67dbcf2eaa09d9970800000000000000
-      internalID: 8763319513559907702
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Run_6
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 10
-        width: 140
-        height: 185
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 138eb2c1636c621f0800000000000000
-      internalID: -1069949925750740943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Main_Run_7
-      rect:
-        serializedVersion: 2
-        x: 440
-        y: 5
-        width: 130
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e082ea87b22606ab0800000000000000
-      internalID: -5016902046042937330
+      spriteID: 86d3d6be83fe86510800000000000000
+      internalID: 1542745900121406824
       vertices: []
       indices: 
       edges: []
@@ -281,7 +257,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ed325220c20f1d14b80333424dbefd12
+    spriteID: 2760bb0e4b29aca478e54c7334a0e456
     internalID: 0
     vertices: []
     indices: 

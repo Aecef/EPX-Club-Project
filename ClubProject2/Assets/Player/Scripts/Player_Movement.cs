@@ -11,6 +11,9 @@ public class Player_Movement : MonoBehaviour
     private Vector2 moveVelocity;
     private Animator anim;
     private SpriteRenderer sr;
+    private HideScript hideScript;
+
+    private NPC_Controller npc;
 
 
     // Use this for initialization
@@ -21,7 +24,7 @@ public class Player_Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-
+        hideScript = GetComponent<HideScript>();
     }
 
     // Update is called once per frame
@@ -50,8 +53,7 @@ public class Player_Movement : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Should flip the sprite to face the direction its moving
-        //NOT Currently working
+        //Flip the sprite to face the direction its moving
         if (Input.GetAxisRaw("Horizontal") != 0)
         {
             if (Input.GetAxisRaw("Horizontal") >= 0.01f)
@@ -63,6 +65,37 @@ public class Player_Movement : MonoBehaviour
                 sr.flipX = true;
             }
         }
-        rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+
+        if (!inDialogue())
+        {
+            rb.MovePosition(rb.position + moveVelocity * Time.fixedDeltaTime);
+        }
+    }
+    
+    // FOR TRIGGERING DIALOGUE
+    // bool for preventing player movement during dialogue
+    private bool inDialogue()
+    {
+        if (npc != null)
+            return npc.DialogueActive();
+        else
+            return false;
+    }
+    // checks for Collider2D attached to gameObject with 'NPC' tag
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "NPC")
+        {
+            npc = collision.gameObject.GetComponent<NPC_Controller>();
+
+            // 'E' to activate dialogue
+            if(Input.GetKey(KeyCode.E))
+                collision.gameObject.GetComponent<NPC_Controller>().ActivateDialogue();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        npc = null;
     }
 }
